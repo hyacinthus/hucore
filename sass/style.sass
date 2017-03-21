@@ -1,7 +1,7 @@
 $blue: #2077b2
 $primary: $blue
 $grey-dark: #42464c
-$family-sans-serif: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif
+$family-sans-serif: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif
 
 @import "node_modules/bulma/bulma"
 
@@ -51,6 +51,8 @@ code
   background-color: transparent
   font-size: 90%
 
+.tags
+  margin-top: 40px
 
 
 article+article
@@ -58,9 +60,10 @@ article+article
 
 .content
   h1, h2, h3, h4, h5, h6
+    margin-top: 40px
     line-height: 1.25
     &:not(:first-child)
-      margin-top: 80px
+      margin-top: 40px
     &::before
       color: #aeb1b5
       font-weight: bold
