@@ -1,7 +1,8 @@
 $blue: #2077b2
 $primary: $blue
 $grey-dark: #42464c
-$family-sans-serif: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif
+$family-sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, Serif
+
 
 @import "node_modules/bulma/bulma"
 
@@ -46,7 +47,15 @@ nav .level
   &.notfound
     font-size: 20vw
 
+.post-date
+  color: #cccccc
+  font-size: 14px
+  margin-left: 5px
+  display:block
+  position: relative
+
 code
+  font-family: 'Source Code Pro', Monaco, Courier, monospace
   color: inherit
   background-color: transparent
   font-size: 90%
@@ -56,7 +65,7 @@ code
 
 
 article+article
-  margin-top: 80px
+  margin-top: 30px
 
 .content
   h1, h2, h3, h4, h5, h6
@@ -66,7 +75,7 @@ article+article
       margin-top: 40px
     &::before
       color: #aeb1b5
-      font-weight: bold
+      font-weight: 700
     code
       background-color: #f8f8f8
   h1+h2:not(:first-child),
@@ -76,19 +85,19 @@ article+article
   h5+h6:not(:first-child)
     margin-top: 20px
   h1
-    font-size: 24px
+    font-size: 1.8rem
     &::before
       content: "# "
   h2
-    font-size: 22px
+    font-size: 1.5rem
     &::before
       content: "## "
   h3
-    font-size: 20px
+    font-size: 1.25rem
     &::before
       content: "### "
   h4
-    font-size: 18px
+    font-size: 1rem
     &::before
       content: "#### "
   h5

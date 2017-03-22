@@ -4,8 +4,8 @@
   <div class="container">
     {{ range sort .Paginator.Pages }}
     <article>
+      <span class="post-date">{{ .Date.Format "2006/1/2" }}</span>
       <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
-      <h2 class="subtitle is-5">{{ .Date.Format "2006年1月2日" }}</h2>
     </article>
     {{ end }}
   </div>
